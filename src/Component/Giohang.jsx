@@ -57,7 +57,7 @@ export default function Giohang() {
                           <td className='text-center' style={{ width: 100 }}>{giohangItem.kho === 0 ? "" : `${giohangItem.kho}`}</td>
                           <td className='text-right' style={{ width: 100 }}>{giohangItem.kho === 0 ? "" : `${giohangItem.price.toLocaleString()}`}</td>
                           <td className='text-right' style={{ width: 150 }}>{giohangItem.kho === 0 ? "" : `${(giohangItem.price*giohangItem.kho).toLocaleString()}`}</td>
-                          <td><button className='btn btn-success mr-1' onClick={() => { dispatch({ type: actionTypes.INCREMENT, payload: { listId: giohangItem.id, amount: 1 } }) }}>Thêm</button><button className='btn btn-danger' onClick={() => { dispatch({ type: actionTypes.DECREMENT, payload: { listId: giohangItem.id, amount: 1 } }) }}>Xóa</button></td>
+                          <td className='text-center'><button className='btn btn-success mr-1' onClick={() => { dispatch({ type: actionTypes.INCREMENT, payload: { listId: giohangItem.id, amount: 1 } }) }}>Thêm</button><button className='btn btn-danger' onClick={() => { dispatch({ type: actionTypes.DECREMENT, payload: { listId: giohangItem.id, amount: 1 } }) }}>Xóa</button></td>
                           <td></td>
                           <td></td>
                         </tr>

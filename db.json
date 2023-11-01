@@ -78,19 +78,5 @@
             "userName": "user2",
             "password": "22091995"
         }
-    ],
-    "receivers": [
-        {
-            "id": "1",
-            "userId": "1",
-            "name": "Nguyễn Văn A",
-            "phone": "2424254",
-            "address": "Hà Nội",
-            "payment": "Tiền mặt",
-            "boughtProducts": [
-                {
-                }
-            ]
-        }
     ]
 }
