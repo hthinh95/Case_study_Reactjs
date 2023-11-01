@@ -1,0 +1,96 @@
+{
+    "lists": [
+        {
+            "id": 1,
+            "tensp": "Điện thoại iPhone 15 Pro Max 256GB",
+            "price": 33990000,
+            "kho": 0,
+            "img": "../img/Điện thoại iPhone 15 Pro Max 256GB.jpg",
+            "manhinh": "OLED",
+            "camsau": "Chính 48 MP & Phụ 12 MP, 12 MP",
+            "camtruoc": "12 MP",
+            "hdh": "iOS 17"
+        },
+        {
+            "id": 2,
+            "tensp": "Điện thoại iPhone 15 Pro 128GB",
+            "price": 27990000,
+            "kho": 0,
+            "img": "../img/Điện thoại iPhone 15 Pro 128GB.jpg",
+            "manhinh": "OLED",
+            "camsau": "Chính 48 MP & Phụ 12 MP, 12 MP",
+            "camtruoc": "12 MP",
+            "hdh": "iOS 17"
+        },
+        {
+            "id": 3,
+            "tensp": "Điện thoại iPhone 15 Plus 128GB",
+            "price": 25990000,
+            "kho": 0,
+            "img": "../img/Điện thoại iPhone 15 Plus 128GB.jpg",
+            "manhinh": "OLED",
+            "camsau": "Chính 48 MP & Phụ 12 MP",
+            "camtruoc": "12 MP",
+            "hdh": "iOS 17"
+        },
+        {
+            "id": 4,
+            "tensp": "Điện thoại iPhone 15 128GB",
+            "price": 22990000,
+            "kho": 0,
+            "img": "../img/Điện thoại iPhone 15 128GB.jpg",
+            "manhinh": "OLED",
+            "camsau": "Chính 48 MP & Phụ 12 MP, 12 MP",
+            "camtruoc": "12 MP",
+            "hdh": "iOS 17"
+        },
+        {
+            "id": 5,
+            "tensp": "Điện thoại Samsung Galaxy A05 4GB",
+            "price": 3090000,
+            "kho": 0,
+            "img": "../img/Điện thoại Samsung Galaxy A05 4GB.jpg",
+            "manhinh": "PLS LCD 6.7 HD+",
+            "camsau": "Chính 50 MP & Phụ 2 MP",
+            "camtruoc": "8 MP",
+            "hdh": "Android 13"
+        },
+        {
+            "id": 6,
+            "tensp": "Điện thoại OPPO Reno10 Pro 5G",
+            "price": 13990000,
+            "kho": 0,
+            "img": "../img/Điện thoại OPPO Reno10 Pro 5G.jpg",
+            "manhinh": "AMOLED",
+            "camsau": "Chính 50 MP & Phụ 32 MP, 8 MP",
+            "camtruoc": "32 MP",
+            "hdh": "Android 13"
+        }
+    ],
+    "users": [
+        {
+            "id": "1",
+            "userName": "user1",
+            "password": "22091995"
+        },
+        {
+            "id": "2",
+            "userName": "user2",
+            "password": "22091995"
+        }
+    ],
+    "receivers": [
+        {
+            "id": "1",
+            "userId": "1",
+            "name": "Nguyễn Văn A",
+            "phone": "2424254",
+            "address": "Hà Nội",
+            "payment": "Tiền mặt",
+            "boughtProducts": [
+                {
+                }
+            ]
+        }
+    ]
+}
