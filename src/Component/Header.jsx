@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux/es/hooks/useSelector';
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import routes from '../routes';
 import Giohang from './Giohang';
 
@@ -43,13 +43,6 @@ export default function Header(props) {
                 </span>
 
                 <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    {/* <Link
-                        to={`${routes.web.history}/${props.user.id}`}
-                        className="dropdown-item"
-                        style={{ textDecoration: "none", color: "black" }}
-                        >
-                        Lịch sử mua hàng
-                    </Link> */}
                     <a
                         onClick={() => { window.localStorage.removeItem("loginUser"); navigate(routes.web.login) }}
                         className="dropdown-item"

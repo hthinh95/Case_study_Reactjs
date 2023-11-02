@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import actionTypes from '../Redux/actionTypes';
 import routes from '../routes';
@@ -22,8 +22,8 @@ export default function ProductList() {
     return (
         <div className='mt-2'>
             <div className='row'>
-                {lists.map((list, index) => (
-                    <div key={index} className='col-2 mb-2'>
+                {lists.map((list, id) => (
+                    <div key={id} className='col-2 mb-2'>
                         <div className="card text-left">
                             <img className="card-img-top mt-2" src={list.img} alt={list.tensp} />
                             <div className="card-body">

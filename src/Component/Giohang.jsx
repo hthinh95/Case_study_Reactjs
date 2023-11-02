@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import actionTypes from '../Redux/actionTypes';
+import './Giohang.css'
 
 
 export default function Giohang() {
@@ -29,7 +30,7 @@ export default function Giohang() {
 
       <div className="modal fade" id="modelId" tabIndex={-1} role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
         <div className="modal-dialog" role="document">
-          <div className="modal-content" style={{ minWidth: 1000 }}>
+          <div className="modal-content my-custom-modal-content" style={{ minWidth: 1000 }}>
             <div className="modal-header">
               <h5 className="modal-title">Giỏ hàng</h5>
               <button type="button" className="close" data-dismiss="modal" aria-label="Close">
