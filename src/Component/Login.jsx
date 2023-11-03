@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'
 import routes from '../routes'
 import axios from 'axios'
@@ -8,25 +8,6 @@ export default function LoginPage() {
   const [password, setPassword] = useState('');
   const [loginStatus, setLoginStatus] = useState(null);
   const navigate = useNavigate();
-
-  useEffect(() => {
-    async function fetchLoginUser() {
-      const response = await axios.get('http://localhost:3001/users');
-      const data = response.data;
-      const index = data.findIndex((appUser) => appUser.userName === username && appUser.password === password);
-
-      if (index !== -1) {
-        window.localStorage.setItem('loginUser', JSON.stringify(data[index]));
-        navigate(`${routes.web.home}`); //coi thêm
-      } else {
-        setLoginStatus('error');
-      }
-    }
-    if (loginStatus === 'success') {
-      fetchLoginUser();
-    }
-  }, [username, password, loginStatus, navigate]);
-
   const handleLogin = async () => {
     try {
       const response = await axios.get(`http://localhost:3001/users?userName=${username}&password=${password}`);
