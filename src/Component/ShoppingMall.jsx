@@ -14,7 +14,6 @@ export default function ShoppingMall() {
         password: "",
     });
     const { userId } = useParams();
-    const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
         async function fetchUser() {
             const response = await axios.get(`http://localhost:3001/users/${userId}`);
@@ -25,7 +24,6 @@ export default function ShoppingMall() {
                 userName: data.userName,
                 password: data.password,
             });
-            setIsLoading(false)
         }
         fetchUser()
     }, [userId]);
